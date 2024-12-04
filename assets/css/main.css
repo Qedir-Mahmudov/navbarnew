@@ -119,9 +119,12 @@
   margin-left: 10px;
   /*     transform: translateX(-160px); */
 }
-.navbar .navbottom .holiday h2 {
+.navbar .navbottom .holiday a {
   font-family: sans-serif;
   text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
 }
 .navbar .navbottom .add {
   height: 30px;
@@ -145,6 +148,7 @@
     flex-direction: column;
     gap: 2px;
     margin-top: 40px;
+    margin-right: 20px;
   }
   .hamburger .line1 {
     height: 2px;
@@ -173,4 +177,111 @@
     width: 100%;
     background-color: rgb(33, 56, 56);
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#login {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(-45deg, #5262ee, #1506ec, #23a6d5, #8e23d5);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  /*   background: linear-gradient(to bottom, blue, white); */
+  /* body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      height: 100vh;
+    } */
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#login .container {
+  height: 340px;
+  width: 400px;
+  border: 1px solid black;
+  transform: translateY(200px);
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(113, 115, 248);
+}
+#login .container .log {
+  height: 70px;
+  width: 100%;
+  background-color: rgb(58, 47, 153);
+  text-align: center;
+}
+#login .container .log h1 {
+  color: aliceblue;
+  margin-top: 20px;
+}
+#login .container .log a {
+  text-decoration: none;
+}
+#login .container .email {
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(113, 115, 248);
+}
+#login .container .email p {
+  color: aliceblue;
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+#login .container .email #em {
+  height: 40px;
+  width: 300px;
+  margin-top: 10px;
+  border-radius: 5%;
+}
+#login .container .pasword {
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(113, 115, 248);
+}
+#login .container .pasword p {
+  color: aliceblue;
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+#login .container .pasword #pas {
+  height: 40px;
+  width: 300px;
+  margin-top: 10px;
+  border-radius: 5%;
+}
+#login .container .logindiv {
+  height: 50px;
+  width: 300px;
+  background-color: rgb(58, 47, 153);
+  border: 1px solid black;
+  border-radius: 3%;
+  text-align: center;
+  margin-top: 10px;
+  transform: translateX(50px);
+  justify-content: center;
+}
+#login .container .logindiv h1 {
+  color: aliceblue;
+  margin-top: 10px;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#login {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(-45deg, #5262ee, #1506ec, #23a6d5, #8e23d5);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+/*   background: linear-gradient(to bottom, blue, white); */
+/* body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  } */
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .container {
+    height: 340px;
+    width: 400px;
+    border: 1px solid black;
+    transform: translateY(200px);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(113, 115, 248);
+
+    .log {
+      height: 70px;
+      width: 100%;
+      background-color: rgb(58, 47, 153);
+      text-align: center;
+      h1 {
+        color: aliceblue;
+        margin-top: 20px;
+      }
+      a{
+        text-decoration: none;
+      }
+      
+    }
+    .email {
+      text-align: center;
+      height: 100px;
+      width: 100%;
+      background-color: rgb(113, 115, 248);
+      p{
+        color: aliceblue;
+        font-size: 20px;
+        margin-top: 10px;
+        font-family: sans-serif;
+      }
+      #em{
+        height: 40px;
+        width: 300px;
+        margin-top: 10px;
+        border-radius: 5%;
+      }
+    }
+    .pasword {
+      text-align: center;
+      height: 100px;
+      width: 100%;
+      background-color: rgb(113, 115, 248);
+      p{
+        color: aliceblue;
+        font-size: 20px;
+        margin-top: 10px;
+        font-family: sans-serif;
+      }
+      #pas{
+        height: 40px;
+        width: 300px;
+        margin-top: 10px;
+        border-radius: 5%;
+        
+      }
+    }
+    .logindiv {
+      height: 50px;
+      width: 300px;
+      background-color: rgb(58, 47, 153);
+      border: 1px solid black;
+      border-radius: 3%;
+      text-align: center;
+      margin-top: 10px;
+      transform: translateX(50px);
+      justify-content: center;
+      h1 {
+        color: aliceblue;
+        margin-top: 10px;
+      }
+    }
+  }
+}
